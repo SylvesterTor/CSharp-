@@ -17,9 +17,22 @@
 
 
 // Suggestion to get started on user interaction in the console
-/*
+
 
 CarDealer dealer = new CarDealer(); //This class you need to create yourself!
+Car bmwX5 = new Car("BMW","X5",40000,200,2023,"gas",dealer.inv);
+Car bmwX6 = new Car("BMW","X6",50000,300,2023,"gas",dealer.inv);
+Car bmwZ4 = new Car("BMW","Z4",30000,150,2023,"gas",dealer.inv);
+Car audiA5 = new Car("Audi","A5",55555,400,2023,"gas",dealer.inv);
+Car mercedesG63 = new Car("Mercedes","G 63",99999,250,2023,"gas",dealer.inv);
+Car jaguarFtype = new Car("Jaguar","F type",123241,180,2023,"gas",dealer.inv);
+
+dealer.buy();
+string answer = Console.ReadLine();
+
+/*
+
+
 while(true){
 
     Console.WriteLine("Write an action [buy, sell, exit]");
@@ -37,6 +50,6 @@ while(true){
         default:
             return;
     }
-}
-*/
+}*/
+
 #endregion
