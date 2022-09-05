@@ -24,9 +24,6 @@ class Car
         inv.Add(this);
     }
 
-    public void RemoveFromInventory(List<Car> inv){
-
-    } 
 
     public void info(){
         Console.WriteLine("Vores " + constructor + " af modellen " + model + " er en rigtig god bil.");

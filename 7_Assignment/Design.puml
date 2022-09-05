@@ -1,0 +1,41 @@
+@startuml design
+
+class CarDealer{
+    + biler[] : lager
+    + void : sælge()
+    + void : printLager()
+    + biler[] : fjern()
+}
+
+class Køber {
+    + void: køb()
+    + void :kør()
+    + int: budget
+    + biler[] : biler
+}
+
+class Biler{
+    + void : printinfo()
+    + void: prøvetur()
+}
+
+class Kvittering{
+    + void : lavKvit()
+    + void: printKvit()
+}
+
+class Motor{
+    + void : printinfo()
+} 
+
+Biler -- Motor
+
+Køber --  Kvittering
+
+CarDealer .. Køber
+
+CarDealer .. Biler
+
+Biler .. Køber
+
+@enduml
